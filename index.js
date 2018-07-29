@@ -10,3 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 Handlebars.registerPartial('recipeDetails', document.getElementById("recipe-details-partial").innerHTML);
 
 
+Handlebars.registerHelper("displayIngredient",function(ingredient){
+  
+});
+
