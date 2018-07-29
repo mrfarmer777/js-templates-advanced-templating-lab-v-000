@@ -43,7 +43,7 @@ function createRecipe(){
 
 function displayEditForm(){
   
-  var template=Handlebars.compile(document.getElementById("recipe-template").innerHTML);
+  var template=Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
 }
 
 
