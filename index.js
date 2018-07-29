@@ -25,7 +25,11 @@ function createRecipe(){
   var name=document.getElementsByName("name")[0].value;
   var description=document.getElementsByName('description')[0].value;
   var ings=[];
-  var ings[0]=document.getElementsByName("ingredients")[0].value;
+  var ingNodes=document.getElementsByName("ingredients");
+  for(const node in ingNodes){
+    ings.push(node.value);
+  }
+  console.log(ings);
   
   
   
