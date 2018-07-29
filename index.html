@@ -36,9 +36,10 @@
     </script>
     
     <script id="recipe-details-partial" type="text/x-handlebars-template">
-      <div id="description">{{description}}</div>
-      {{#each ingredients}}
-      <div id="ingredients">{{displayIngredient this}}</div>
+      <div id="recipe-form-partial">
+        <div id="description">{{description}}</div>
+        {{#each ingredients}}
+        <div id="ingredients">{{displayIngredient this}}</div>
     </script>
     
     
