@@ -44,10 +44,12 @@ function createRecipe(){
 function displayEditForm(){
   var name=document.getElementsByName("name")[0].value;
   var description=document.getElementsByName('description')[0].value;
+  var ings=[];
   
   
   var template=Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
-  
+  var result=template({"name":name, "description":description, "ingredients":ings});
+  document.getElementById("main").innerHTML+=result;
   
 }
 
