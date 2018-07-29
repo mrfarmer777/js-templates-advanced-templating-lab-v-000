@@ -11,6 +11,6 @@ Handlebars.registerPartial('recipeDetails', document.getElementById("recipe-deta
 
 
 Handlebars.registerHelper("displayIngredient",function(ingredient){
-  return Handlebars.SafeString()
+  return Handlebars.SafeString("<p>{{quantity}} {{name}}</p>")
 });
 
