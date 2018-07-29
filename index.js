@@ -7,4 +7,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-function Handlebars.
+function Handlebars.registerPartial('recipeDetails', document.getElementById("recipe-details-partial")
