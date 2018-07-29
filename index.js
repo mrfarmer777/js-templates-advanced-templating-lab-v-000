@@ -11,7 +11,7 @@ function init() {
 document.addEventListener("DOMContentLoaded", function(event) {
   init();
   
-  var template=Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
+  var template=Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
   
   var dest=document.getElementById("main");
   var result=template();
@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   
 });
+
+
+function displayEditForm(){
+  
+}
 
 
 
