@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
 });
 
+function createRecipe(){
+  var recipe={
+    name:
+  }
+}
+
+
 
 function displayEditForm(){
   
