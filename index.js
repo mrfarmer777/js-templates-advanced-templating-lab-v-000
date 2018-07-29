@@ -7,9 +7,6 @@ function init() {
   Handlebars.registerHelper("displayIngredient",function(ingredient){
     return Handlebars.SafeString("<p>{{quantity}} {{name}}</p>");
   });
-}
-document.addEventListener("DOMContentLoaded", function(event) {
-  init();
   
   var template=Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
   
@@ -17,6 +14,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var result=template();
   dest.innerHTML=result;
  
+}
+document.addEventListener("DOMContentLoaded", function(event) {
+  init();
+  
+  
   
   
 });
