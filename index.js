@@ -26,12 +26,10 @@ function createRecipe(){
   var description=document.getElementsByName('description')[0].value;
   var ings=[];
   var ingNodes=document.getElementsByName("ingredients");
-  console.log(ingNodes);
   for(const node in ingNodes){
     ings.push(node.value);
   }
-  console.log(ings);
-  
+
   
   
   template=Handlebars.compile(document.getElementById("recipe-template").innerHTML);
