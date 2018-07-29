@@ -22,10 +22,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 function createRecipe(){
-  var recipe={
-    'name': document.getElementsByName("name")[0].value
-    'ingredients': document.getElementsByName("ingredients")
-  }
+  var name=document.getElementsByName("name")[0].value;
+  var ingredients=document.getElementsByName("ingredients").value;
 }
 
 
