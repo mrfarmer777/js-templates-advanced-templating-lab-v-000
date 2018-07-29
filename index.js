@@ -12,7 +12,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   var template=Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
   
-  var dest=document.getElementById("main")
+  var dest=document.getElementById("main");
+  var result=template();
+  dest.innerHTML=result;
  
   
   
