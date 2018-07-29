@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function createRecipe(){
   var name=document.getElementsByName("name")[0].value;
-  var ingredNodes=document.getElementsByName("ingredients").value;
+  var ingredNodes=document.getElementsByName("ingredients")
   console.log(ingredNodes);
   
   
