@@ -23,9 +23,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function createRecipe(){
   var name=document.getElementsByName("name")[0].value;
-  var ingredients=document.getElementsByName("ingredients");
+  var ingredNodes=document.getElementsByName("ingredients");
   
-  template=Handlebars.compile()
+  template=Handlebars.compile(document.getElementById("recipe-template").innerHTML);
+  
+  
 }
 
 
